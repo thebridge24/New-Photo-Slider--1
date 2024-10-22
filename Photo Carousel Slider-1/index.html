@@ -5,47 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Slider-1</title>
     <link rel="stylesheet" href="./styles.css">
-
-    <style>
-        /* Preloader Styles */
-        body {
-            overflow: hidden; /* Prevent scrolling when loading */
-        }
-        
-        .preloader {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #181414; /* Background color of preloader */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999; /* Ensure it covers everything */
-        }
-
-        .quarter-circle {
-        width: 50px; /* Diameter of the circle */
-        height: 50px;
-        border: 8px solid #ff5e00; /* Border color and thickness */
-        border-radius: 50%; /* Create a full circle */
-        border-right-color: transparent; /* Cut an arc by making part of the border transparent */
-        border-bottom-color: transparent; /* Cut another part of the arc */
-        position: relative;
-        animation: rotate 1s infinite linear; /* Rotate the circle */
-        }
-
-        @keyframes rotate {
-            0% {
-                transform: rotate(0deg);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-    </style>
-
 </head>
 <body>
     <div class="preloader">
@@ -176,13 +135,6 @@
       <div class="time"></div>
     </div>
     <script src="app.js"></script>
-    <script>
-        // Hide preloader once the page is fully loaded
-        window.addEventListener('load', function() {
-            const preloader = document.querySelector('.preloader');
-            preloader.style.display = 'none';
-            document.body.style.overflow = 'auto'; // Restore scrolling
-        });
-    </script>
+
 </body>
 </html>
