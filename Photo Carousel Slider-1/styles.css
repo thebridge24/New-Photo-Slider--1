@@ -361,4 +361,8 @@ prev will be added to the carousel */
     .carousel .list .item .content .title{
         font-size: 30px;
     }
+    .thumbnail {
+        bottom: 20px;
+    }
+
 }
